@@ -1,0 +1,139 @@
+
+      /* Body & background */
+      body {
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000; /* dark background */
+        font-family: "Poppins", sans-serif;
+        color: #e8d9f0;
+        overflow: hidden;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: linear-gradient(#ffffff12 1px, transparent 1px),
+          linear-gradient(90deg, #ffffff12 1px, transparent 1px);
+        background-size: 35px 35px;
+        animation: gridMove 22s linear infinite;
+      }
+
+      @keyframes gridMove {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(40px);
+        }
+      }
+
+      /* Login Card */
+      .login-card {
+        position: relative;
+        z-index: 5;
+        width: 380px;
+        padding: 35px;
+        background: rgba(0, 0, 0, 0.55);
+        border-radius: 14px;
+        border: 1px solid #00eaff;
+        box-shadow: 0 0 25px #00eaff77;
+        backdrop-filter: blur(6px);
+      }
+
+      .login-card h2 {
+        text-align: center;
+        text-shadow: 0 0 18px #00faff;
+        margin-bottom: 25px;
+        color: #9afcff;
+        font-weight: 600;
+      }
+
+      /* Neon Input */
+      .form-control {
+        background-color: rgba(0, 0, 0, 0.6);
+        border: 1px solid #00eaff88;
+        color: #c8f8ff;
+      }
+
+      .form-control::placeholder {
+        color: #5ee3ff;
+        opacity: 69%;
+      }
+
+      .form-control:focus {
+        border-color: #00eaff;
+        box-shadow: 0 0 10px #00eaff88;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #c8f8ff;
+      }
+
+      /* Eye Icon Neon */
+      .eye-icon {
+        cursor: pointer;
+        padding: 0 12px;
+        color: #9afcff;
+        display: flex;
+        align-items: center;
+      }
+
+      .eye-icon svg {
+        width: 20px;
+        height: 20px;
+        fill: #9afcff;
+        filter: drop-shadow(0 0 5px #00eaff);
+        transition: 0.2s;
+      }
+
+      .eye-icon:hover svg {
+        fill: white;
+        filter: drop-shadow(0 0 9px #00faff);
+      }
+
+      /* Neon Button */
+      .btn-neon {
+        background: linear-gradient(90deg, #003cff, #00eaff);
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        letter-spacing: 1px;
+        box-shadow: 0 0 12px #00eaff88;
+        transition: 0.3s;
+      }
+
+      .btn-neon:hover {
+        box-shadow: 0 0 20px #00eaff;
+        transform: translateY(-2px);
+      }
+
+      /* Forgot Link */
+      .forgot-link {
+        text-align: center;
+        display: block;
+        margin-top: 15px;
+        color: #9afcff;
+        text-decoration: none;
+      }
+
+       /* error-message */
+      .err-mesg {
+        text-align: center;
+        display: block;
+        margin-top: 15px;
+        color: #9afcff;
+        text-decoration: none;
+      }
+
+      .err-mesg:hover {
+        color: #c4ffff;
+    
+      }
+
+      .forgot-link:hover {
+        color: #c4ffff;
+        text-decoration: underline;
+      }
+    
