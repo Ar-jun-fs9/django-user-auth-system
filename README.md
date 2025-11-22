@@ -3,7 +3,7 @@
   
 # Authentication System
 
-A modern, neon-themed Django application featuring a secure and responsive user authentication system with login and logout functionality.
+A modern, neon-themed Basic Django application featuring a secure and responsive user authentication system with login and logout functionality.
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 [![Django](https://img.shields.io/badge/Django-5.2.8-darkgreen.svg)](https://www.djangoproject.com/)
